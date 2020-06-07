@@ -3,8 +3,17 @@
 </head>
 
 <div id="app">
-  <p>
-    Hello<span v-bind:style="styleObject">Vue.js!</span>
+  <p v-if="color === 'red'">
+    Stop
+  </p>
+  <p v-else-if="color === 'yellow'">
+    Cautiuon
+  </p>
+  <p v-else-if="color === 'blue'">
+    Go
+  </p>
+  <p v-else>
+    Not red/yellow/blue
   </p>
 </div>
 
